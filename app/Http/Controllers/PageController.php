@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Train;
+use App\Models\Holiday;
 
 class PageController extends Controller
 {
@@ -28,6 +29,13 @@ class PageController extends Controller
         $trains = Train::all();
 
         return view('trains' , compact('trains'));
+    }
+
+    public function holidays(){
+
+        $holidays = Holiday::all();
+
+        return view('holidays' , compact('holidays'));
     }
 
 }

@@ -1,6 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
+
 <div class="container my-5">
     <h1>Tutti i treni</h1>
 
@@ -27,10 +28,10 @@
                             <td>{{$train->Time_of_arrival}}</td>
                             <td>{{$train->Train_code}}</td>
                             <td>{{$train->Carriage_number}}</td>
-                            <td>{{$train->Timetable}}</td>
+                            <td>{{$train->Timetable ? 'si' : 'no'}}</td>
                         </tr>
                     @endforeach
-                </tbody>
+                </tbody>3
       </table>
 
 
@@ -38,7 +39,5 @@
 
 @endsection
 
-@section('titlePage')
-    contatti
-@endsection
+
 

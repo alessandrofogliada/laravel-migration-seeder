@@ -18,4 +18,6 @@ Route::get('/' , [PageController::class ,'index'])->name('home');
 Route::get('/contatti' , [PageController::class , 'contacts'])->name('contacts');
 Route::get('/chi-siamo' , [PageController::class ,'about'])->name('about');
 Route::get('/treni' , [PageController::class ,'trains'])->name('trains');
+Route::get('/vacanze' , [PageController::class ,'holidays'])->name('holidays');
+
 
